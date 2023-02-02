@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="app-container">
+        <h2>Tip Calculator</h2>
+        <div class="bill-input">
+          <label>Enter Bill Total</label>
+          ₹: <input type="number" value="0" id="input-val" />
+        </div>
+        <div class="tip-area">
+          <div class="tip-area-flex">
+            <label for="">Choose Tip</label>
+            <div class="tip-percent">0%</div>
+          </div>
+          <input type="range" min="0" value="0" max="100" id="tip-val" />
+          <div class="tip-amount">₹ 0</div>
+        </div>
+        <div class="split-area">
+          <div class="tip-area-flex">
+            <label>Split</label>
+            <div class="peoples">1 Person</div>
+          </div>
+          <input type="range" min="1" value="1" max="10" id="split-val" />
+        </div>
+        <div class="dashboard-area">
+          <label>Total Per person</label>
+          <div class="main-balance"></div>
+          <div class="bill_tip_area">
+            <div class="total-bill"><span>Total Bill :</span>0</div>
+            <div class="total-tip"><span>Total Tip : </span>0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

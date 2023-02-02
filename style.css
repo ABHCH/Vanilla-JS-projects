@@ -1,0 +1,104 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162, 77%, 40%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+
+.app-container {
+  width: 30%;
+  min-height: 65vh;
+  height: auto;
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(127, 138, 165, 0.43);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  text-align: center;
+  padding: 2rem;
+}
+
+.bill-input {
+  margin-top: 2rem;
+}
+
+.bill-input label {
+  display: block;
+}
+.bill-input input {
+  width: 30%;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.tip-area {
+  margin-top: 2rem;
+}
+.tip-area label {
+  display: block;
+  text-align: left;
+}
+
+.tip-area input {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.tip-area-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.split-area {
+  margin-top: 2rem;
+}
+.split-area label {
+  display: block;
+  text-align: left;
+}
+.split-area input {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.dashboard-area {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(127, 138, 165, 0.43);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  height: 20vh;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.dashboard-area label {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.main-balance {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.bill_tip_area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-weight: bold;
+}
